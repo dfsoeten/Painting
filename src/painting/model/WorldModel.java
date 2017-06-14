@@ -92,10 +92,7 @@ public class WorldModel extends Observable{
         }
 
         if(this.trees.size() < this.maxTrees){
-            this.trees.add(new TreeModel(treeSize, treeType, relX, relY));
-            trees.sort(Comparator.comparing(TreeModel::getRelY));
-            setChanged();
-            notifyObservers(this.trees);
+            this.addTree(treeType, treeSize, relX, relY);
         }
     }
 
@@ -135,10 +132,7 @@ public class WorldModel extends Observable{
         }
 
         if(this.trees.size() < this.maxTrees){
-            this.trees.add(new TreeModel(treeSize, treeType, relX, relY));
-            trees.sort(Comparator.comparing(TreeModel::getRelY));
-            setChanged();
-            notifyObservers(this.trees);
+            this.addTree(treeType, treeSize, relX, relY);
         }
     }
 

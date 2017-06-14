@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/painting/painting/Main.class" afterPath="$PROJECT_DIR$/out/production/painting/painting/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/painting/painting/controller/MenuController$1.class" afterPath="$PROJECT_DIR$/out/production/painting/painting/controller/MenuController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/painting/painting/controller/MenuController.class" afterPath="$PROJECT_DIR$/out/production/painting/painting/controller/MenuController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/painting/painting/model/WorldModel.class" afterPath="$PROJECT_DIR$/out/production/painting/painting/model/WorldModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/painting/Assets/trees.painting" afterPath="$PROJECT_DIR$/src/painting/Assets/trees.painting" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/painting/Main.java" afterPath="$PROJECT_DIR$/src/painting/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/painting/controller/MenuController.java" afterPath="$PROJECT_DIR$/src/painting/controller/MenuController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/painting/controller/PaintingController.java" afterPath="$PROJECT_DIR$/src/painting/controller/PaintingController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/painting/model/WorldModel.java" afterPath="$PROJECT_DIR$/src/painting/model/WorldModel.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -70,7 +61,22 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="WorldModel.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/painting/model/WorldModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1548">
+              <caret line="134" column="55" lean-forward="false" selection-start-line="134" selection-start-column="55" selection-end-line="134" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#addTree#0;class#WorldModel#0" expanded="false" />
+                <element signature="method#clearTrees#0;class#WorldModel#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -144,10 +150,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="98" />
-    <option name="y" value="-8" />
-    <option name="width" value="3742" />
-    <option name="height" value="2168" />
+    <option name="x" value="97" />
+    <option name="y" value="13" />
+    <option name="width" value="3744" />
+    <option name="height" value="2148" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -170,8 +176,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -314,7 +321,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -604,7 +610,8 @@
     <option name="totallyTimeSpent" value="1302000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="98" y="-8" width="3742" height="2168" extended-state="6" />
+    <frame x="97" y="13" width="3744" height="2148" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -621,7 +628,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18011758" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18011758" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -678,14 +685,14 @@
     <entry file="file://$PROJECT_DIR$/src/painting/view/mainView.fxml" />
     <entry file="file://$PROJECT_DIR$/src/painting/view/paint.fxml" />
     <entry file="file://$PROJECT_DIR$/src/painting/view/MenuView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="800">
           <caret line="40" column="16" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/Observer.java">
@@ -706,21 +713,20 @@
     <entry file="file://$PROJECT_DIR$/src/painting/view/MainView.fxml" />
     <entry file="file://$PROJECT_DIR$/src/painting/assets/paint.css" />
     <entry file="file://$PROJECT_DIR$/src/painting/view/PaintingView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
     </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/scene/canvas/GraphicsContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="2569" column="16" lean-forward="false" selection-start-line="2569" selection-start-column="16" selection-end-line="2569" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -752,9 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="9" column="75" lean-forward="false" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -855,7 +858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="585" column="33" lean-forward="false" selection-start-line="584" selection-start-column="23" selection-end-line="585" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -863,7 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
           <caret line="899" column="21" lean-forward="false" selection-start-line="899" selection-start-column="21" selection-end-line="899" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -873,19 +874,6 @@
           <caret line="173" column="0" lean-forward="true" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/painting/model/WorldModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="834">
-          <caret line="138" column="65" lean-forward="true" selection-start-line="138" selection-start-column="12" selection-end-line="138" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#addTree#0;class#WorldModel#0" expanded="false" />
-            <element signature="method#addTree#1;class#WorldModel#0" expanded="false" />
-            <element signature="method#clearTrees#0;class#WorldModel#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -905,6 +893,18 @@
         <state relative-caret-position="884">
           <caret line="34" column="45" lean-forward="false" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/painting/model/WorldModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1548">
+          <caret line="134" column="55" lean-forward="false" selection-start-line="134" selection-start-column="55" selection-end-line="134" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#addTree#0;class#WorldModel#0" expanded="false" />
+            <element signature="method#clearTrees#0;class#WorldModel#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
