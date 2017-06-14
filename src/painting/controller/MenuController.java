@@ -152,8 +152,9 @@ public class MenuController{
         });
 
         treeAdd100Trees.setOnAction(event -> {
-            for(int i = 0; i < 100; i++)
+            for(int i = 0; i < 100; i++) {
                 model.addTree();
+            }
         });
 
         treeClearTrees.setOnAction(event -> {
@@ -188,7 +189,11 @@ public class MenuController{
                 timer.schedule(new TimerTask() {
                     @Override
                     public void run() {
-                        for(TreeModel tree : model.getTrees()){
+                        //This is looped backwards to prevent ConcurrentModificationExceptions
+                        for(int i = model.getTrees().size(); i > 0; i--){
+                            TreeModel tree = model.getTrees().get(i - 1);
+
+                            //Move trees back to the beginning of the screen
                             if(tree.getRelX() > (100.0 + ((tree.getTotalWidth() / 800) * 100)))
                                 tree.setRelX((0.0 - ((tree.getTotalWidth() / 800) * 100)));
 

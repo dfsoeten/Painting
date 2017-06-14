@@ -36,15 +36,23 @@ public class PaintingController implements Observer{
     public void update(Observable o, Object arg) {
 
         if(arg instanceof ArrayList<?>){
+            //Remove the trees before redrawing the canvas
             this.clearTrees();
+            //Counter to make sure the trees are painted in the right order, instead of backwards
+            int c = 0;
 
             ArrayList<TreeModel> trees = (ArrayList<TreeModel>) arg;
 
-            for(TreeModel tree : trees){
-                if(tree.getTreeType() == TreeModel.TreeType.LEAF)
-                    leafTree.paintTree(tree, model.getGc(), model.getWidth(), model.getHeight());
-                else if(tree.getTreeType() == TreeModel.TreeType.PINE)
-                    pineTree.paintTree(tree, model.getGc(), model.getWidth(), model.getHeight());
+            //This is looped backwards to prevent ConcurrentModificationExceptions
+            for(int i = trees.size(); i > 0; i-- ){
+                    TreeModel tree = trees.get(c);
+                    c++;
+
+                    //Choose which tree to paint
+                    if (tree.getTreeType() == TreeModel.TreeType.LEAF)
+                        leafTree.paintTree(tree, model.getGc(), model.getWidth(), model.getHeight());
+                    else if (tree.getTreeType() == TreeModel.TreeType.PINE)
+                        pineTree.paintTree(tree, model.getGc(), model.getWidth(), model.getHeight());
             }
         }
 

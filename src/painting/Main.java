@@ -16,7 +16,6 @@ public class Main extends Application {
         mainController.Start(primaryStage);
     }
 
-
     public static void main(String[] args) {
         launch(args);
     }

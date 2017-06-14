@@ -16,6 +16,9 @@ public class WorldModel extends Observable{
     private final double width = 800.0;
     private final double height = 600.0;
 
+    //Max amount of trees, to prevent all kinds of weird stuff from happening
+    public final int maxTrees = 300;
+
     //Font
     private String font = "Arial";
 
@@ -54,11 +57,13 @@ public class WorldModel extends Observable{
         this.font = font;
     }
 
-    public void addTree(TreeModel.TreeType treeType, TreeModel.TreeSize treeSize, double relX, double relY) {
-        this.trees.add(new TreeModel(treeSize, treeType, relX, relY));
-        trees.sort(Comparator.comparing(TreeModel::getRelY));
-        setChanged();
-        notifyObservers(this.trees);
+    public void addTree(TreeModel.TreeType treeType, TreeModel.TreeSize treeSize, double relX, double relY){
+        if(this.trees.size() < this.maxTrees){
+            this.trees.add(new TreeModel(treeSize, treeType, relX, relY));
+            trees.sort(Comparator.comparing(TreeModel::getRelY));
+            setChanged();
+            notifyObservers(this.trees);
+        }
     }
 
     public void addTree(TreeModel.TreeType treeType){
@@ -86,10 +91,12 @@ public class WorldModel extends Observable{
                 break;
         }
 
-        this.trees.add(new TreeModel(treeSize, treeType, relX, relY));
-        trees.sort(Comparator.comparing(TreeModel::getRelY));
-        setChanged();
-        notifyObservers(this.trees);
+        if(this.trees.size() < this.maxTrees){
+            this.trees.add(new TreeModel(treeSize, treeType, relX, relY));
+            trees.sort(Comparator.comparing(TreeModel::getRelY));
+            setChanged();
+            notifyObservers(this.trees);
+        }
     }
 
     public void addTree(){
@@ -127,10 +134,12 @@ public class WorldModel extends Observable{
                 break;
         }
 
-        this.trees.add(new TreeModel(treeSize, treeType, relX, relY));
-        trees.sort(Comparator.comparing(TreeModel::getRelY));
-        setChanged();
-        notifyObservers(this.trees);
+        if(this.trees.size() < this.maxTrees){
+            this.trees.add(new TreeModel(treeSize, treeType, relX, relY));
+            trees.sort(Comparator.comparing(TreeModel::getRelY));
+            setChanged();
+            notifyObservers(this.trees);
+        }
     }
 
     public void clearTrees(Boolean removeData){
