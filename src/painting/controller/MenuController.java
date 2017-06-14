@@ -67,9 +67,6 @@ public class MenuController{
     public void initialize() {
         //Event handlers for File
         fileLoad.setOnAction(event -> {
-            //Clear our canvas
-            model.clearTrees(true);
-
             //Create a new FileChooser and set it's Title
             FileChooser fileChooser = new FileChooser();
             fileChooser.setTitle("Load Painting");
@@ -82,6 +79,9 @@ public class MenuController{
             File file = fileChooser.showOpenDialog(new Stage());
 
             if (file != null) {
+                //Clear our canvas
+                model.clearTrees(true);
+
                 //Try to read our file and load back in our trees
                 try {
                     //Create a new BufferedReader
