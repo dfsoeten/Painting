@@ -50,34 +50,32 @@ public class TreeModel {
 
         switch (this.treeSize) {
             case S:
-                this.totalWidth = (100.0 * (((this.relY - 50) * 100) / (100 - 50) / 100));
-                this.totalHeight = (100.0 * (((this.relY - 50) * 100) / (100 - 50) / 100));
+                this.totalWidth = this.scaling(100.0);
+                this.totalHeight = this.scaling(100.0);
 
                 this.color = Color.FORESTGREEN;
                 break;
             case M:
-                this.totalWidth = (120.0 * (((this.relY - 50) * 100) / (100 - 50) / 100));
-                this.totalHeight = (120.0 * (((this.relY - 50) * 100) / (100 - 50) / 100));
+                this.totalWidth = this.scaling(120.0);
+                this.totalHeight = this.scaling(120.0);
 
                 this.color = Color.DARKOLIVEGREEN;
                 break;
             case L:
-                this.totalWidth = (150.0 * (((this.relY - 50) * 100) / (100 - 50) / 100));
-                this.totalHeight = (150.0 * (((this.relY - 50) * 100) / (100 - 50) / 100));
+                this.totalWidth = this.scaling(150.0);
+                this.totalHeight = this.scaling(150.0);
 
                 this.color = Color.DARKGREEN;
                 break;
             case XL:
-                this.totalWidth = (170.0 * (((this.relY - 50) * 100) / (100 - 50) / 100));
-                this.totalHeight = (170.0 * (((this.relY - 50) * 100) / (100 - 50) / 100));
+                this.totalWidth = this.scaling(170.0);
+                this.totalHeight = this.scaling(170.0);
 
                 this.color = Color.DARKSEAGREEN;
                 break;
             case XXL:
-                System.out.println();
-
-                this.totalWidth = (200.0 * (((this.relY - 50) * 100) / (100 - 50) / 100));
-                this.totalHeight = (200.0 * (((this.relY - 50) * 100) / (100 - 50) / 100));
+                this.totalWidth = this.scaling(200.0);
+                this.totalHeight = this.scaling(200.0);
 
                 this.color = Color.GREEN;
                 break;
@@ -187,5 +185,9 @@ public class TreeModel {
 
     public double getBarkHeight() {
         return barkHeight;
+    }
+
+    private double scaling(double size){
+        return (size * (((this.relY - 49) * 100) / (100 - 49) / 100));
     }
 }
